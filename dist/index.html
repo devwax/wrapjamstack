@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <style>
     body {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #666;
+      font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 15px;
+      font-weight: 300;
+      color: #313d3e;
       padding: 0;
       margin: 0;
       background-color: #fbfbfb;
@@ -23,25 +25,28 @@
     @media screen and (min-width: 600px) {
       .container {
         width: 60%;
-        font-size: 1rem;
+        font-size: 18px;
       }
     }
     h1.logo {
       font-family: serif;
       text-decoration: underline;
-      margin-bottom: 0;
+      color: #666;
+      margin: 0;
     }
     p {
       margin-top: 0.2rem;
-      font-size: 0.9rem;
     }
-    p.tagline {
-      font-size: 0.72rem;
+    span.tagline {
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1.3px;
       text-transform: uppercase;
       color: #666;
     }
     ol, ul {
       margin-top: 1.5rem;
+      line-height: 25px;
       padding-left: 1.1rem;
     }
     li {
@@ -50,26 +55,38 @@
     .primary-color {
       color: #00c7b7;
     }
+    header {
+      padding: 1rem 0;
+    }
+    main.content .container {
+      border-top: 4px solid lightgray;
+    }
   </style>
-  <title>WrapJAMStack - A JAMstack Marketplace</title>
+  <title>WrapJAMstack - A JAMstack Marketplace</title>
 </head>
 <body>
-  <div class="container">
-    <h1 class="logo">Wrap<span class="primary-color">JAMstack</span></h1>
-    <p class="tagline">Un-Marketplace the Marketplace</p>
-    <hr>
-    <ol>
-      <li>Constructive Criticism <b><u>NOT</u></b> Hard Rejections</li>
-      <li>Build Relationships <b><u>NOT</u></b> Support Queues</li>
-      <li>Flat Fee Per Account <b><u>NOT</u></b> % Per Sale</li>
-      <li>Instant Updates <b><u>NOT</u></b> Endless Waiting</li>
-      <li>Freemium <b><u>NOT</u></b> Exclusivity</li>
-      <li>Exposure <b><u>NOT</u></b> Obscurity</li>
-    </ol>
-    <p><a class="primary-color" href="mailto:wrapjamstack@devwax.com">wrapjamstack@devwax.com</a></p>
-    <br>
-    <hr>
-  </div>
+  <header>
+    <div class="container">
+      <h1 class="logo">Wrap<span class="primary-color">JAMstack</span></h1>
+      <span class="tagline">Un-Marketplace The Marketplace</span>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="manifesto">
+      <div class="container">
+        <ol>
+          <li>Constructive Criticism <b><u>NOT</u></b> Hard Rejections</li>
+          <li>Build Relationships <b><u>NOT</u></b> Support Queues</li>
+          <li>Flat Fee Per Acct <b><u>NOT</u></b> % Per Sale</li>
+          <li>Instant Updates <b><u>NOT</u></b> Endless Waiting</li>
+          <li>Freemium <b><u>NOT</u></b> Exclusivity</li>
+          <li>Exposure <b><u>NOT</u></b> Obscurity</li>
+        </ol>
+        <p><a class="primary-color" href="mailto:wrapjamstack@devwax.com">wrapjamstack@devwax.com</a></p>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
